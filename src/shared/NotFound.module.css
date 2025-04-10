@@ -1,0 +1,36 @@
+/* NotFound.module.css */
+.notfound-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: var(--bg-primary);
+  }
+  
+  .notfound-heading {
+    font-size: 3rem;
+    color: var(--danger);
+  }
+  
+  .notfound-text {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+  }
+  
+  .notfound-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: var(--text-primary);
+    background-color: var(--primary);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .notfound-button:hover {
+    background-color: var(--primary-hover);
+  }

@@ -1,0 +1,132 @@
+/* Add this to your CSS file or use styled-components */
+
+.boundary-list-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boundary-list-container {
+  background-color: var(--bg-primary);
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.boundary-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.boundary-list-header h3 {
+  margin: 0;
+}
+
+.boundary-list-header button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #555;
+}
+
+.boundary-list {
+  padding: 10px 0;
+  max-height: calc(80vh - 60px);
+  overflow-y: auto;
+}
+
+.boundary-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.boundary-list li {
+  padding: 10px 20px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.boundary-list li:hover {
+  background-color: var(--primary-hover);
+}
+
+.boundary-list li.selected {
+  background-color: var(--primary);
+  border-left: 3px solid #1890ff;
+}
+
+.boundary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boundary-info {
+  flex: 1;
+}
+
+.boundary-info h4 {
+  margin: 0 0 5px 0;
+}
+
+.boundary-info p {
+  color: #555;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.boundary-info small {
+  color: #888;
+  font-size: 12px;
+}
+
+.boundary-actions button {
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 1px solid #ff4d4f;
+  color: #ff4d4f;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.boundary-actions button:hover {
+  background-color: #ff4d4f;
+  color: white;
+}
+
+.no-boundaries {
+  text-align: center;
+  color: #888;
+  padding: 20px;
+}
+
+.boundary-list.loading {
+  text-align: center;
+  padding: 30px;
+  color: #888;
+}
+
+.selected-boundary-info {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: var(--bg-tertiary);
+  border-radius: 4px;
+  font-size: 14px;
+}

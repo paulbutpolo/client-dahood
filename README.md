@@ -1,12 +1,25 @@
-# React + Vite
+# Dahood Client!
+This is the Front end of the Neighborhood tour app called DaHood! Welcome to the DaHood fam
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+This application uses various Google APIs to render and capture images from the Street View from point A to point B within the boundary you set and then uses Ffmpeg.wasm to create a 360 video that is sharable and downloadable to be enjoyed by the brothers.
 
-Currently, two official plugins are available:
+## Basic Usage
+Clone the App
+```
+git clone https://github.com/paulbutpolo/client-dahood.git
+```
+Run the server
+```
+cd client-dahood
+npm run dev
+```
+Make sure that the server-dahood is up and running
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Things that this app can do!
+## Basic Authentication
 
-## Expanding the ESLint configuration
+On login we communicate with server to get a token then once got it we store it localStorage like a noob.  
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 
+To be continued

@@ -1,0 +1,53 @@
+:root {
+  /* Background Colors */
+  --bg-primary: #121418;
+  --bg-secondary: #1e2028;
+  --bg-tertiary: #282c34;
+  --bg-accent: #323642;
+  --border-color: #3a3f4b;
+  --sidebar-bg: #0f1115;
+  --header-bg: #15171d;
+  
+  /* Text Colors */
+  --text-primary: #f8f9fa;
+  --text-secondary: #d1d5db;
+  --text-tertiary: #9ca3af;
+  --text-muted: #666c7a;
+  
+  /* Accent Colors */
+  --primary: #6c5ce7;
+  --primary-hover: #7d6deb;
+  --primary-light: #8e7cf3;
+  
+  --secondary: #00b2a9;
+  --secondary-hover: #00c4ba;
+  --secondary-light: #2ad0c8;
+
+  /* Status Colors */
+  --danger: #e74c3c;
+  --success: #00b894;
+  --warning: #f39c12;
+  --info: #3498db;
+
+  /* Global Size */
+  --sidebar-width: 240px;
+  --header-height: 70px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  height: 100vh;
+}
+
+.main-content {
+  margin-left: var(--sidebar-width);
+  min-height: 100vh;
+}
